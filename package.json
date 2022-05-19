@@ -1,11 +1,24 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "nodemon": "^2.0.16"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/morsa08/Portal.git"
+  },
+  "bugs": {
+    "url": "https://github.com/morsa08/Portal/issues"
+  },
+  "homepage": "https://github.com/morsa08/Portal#readme",
+  "description": ""
 }
