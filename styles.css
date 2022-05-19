@@ -1,0 +1,134 @@
+a {
+  color: #337ab7 !important;
+}
+
+body {
+  font-family: Helvetica;
+}
+
+label {
+  font-weight: bold;
+}
+
+li:hover {
+  background-color: #e7e7e7;
+}
+
+h1 {
+  font-size: 2.2rem;
+}
+
+h2 {
+  font-size: 16px;
+}
+
+h3 {
+  font-size: 24px;
+  font-style: normal;
+}
+
+.accordionTickets {
+  background-color: #58a4eb !important;
+  color: white !important;
+  height: 2.5rem;
+  padding-top: 1.5rem;
+}
+
+.activeTab {
+  background-color: #337ab7 !important;
+  color: white !important;
+}
+
+.box {
+  padding: 0;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.createServiceButton {
+  background-color: #5cb85c;
+  color: white;
+  border: 1px;
+  border-radius: 5px;
+  border-color: #4cae4c;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  padding: 4px 10px;
+}
+
+.criteria {
+  margin-bottom: 10px;
+}
+.custom-nav {
+  background-color: white;
+  margin-bottom: 2rem;
+}
+
+.custom-nav li a {
+  font-size: 16px;
+  padding: 10px 15px;
+}
+
+.driverSearch{
+  margin-bottom: 1rem;
+  appearance: auto;
+}
+
+.fa-solid.fa-plus {
+  margin-left: 5px;
+  margin-right: 7px;
+}
+
+
+.fullSize {
+  width: 100%;
+}
+
+.logo {
+  width: 300px;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  border-radius: 100px;
+}
+
+.nav-item {
+  width: 100%;
+}
+
+.form-control.criteria {
+  appearance: auto;
+}
+
+.nav-link {
+  text-align: center;
+}
+
+.noCollapse {
+  padding: 0;
+  border-style: solid;
+  border-color: #e5e8e8;
+  border-width: 2px 0;
+}
+
+.searchBox {
+  margin-bottom: 10px;
+display: none;
+}
+
+
+.searchBox:focus::placeholder {
+  color: transparent;
+}
+
+.serviceSearchButton {
+  display: none;
+  margin-bottom: 10px;
+}
+
+.table{
+  font-size: 12px;
+  font-family: Helvetica;
+}
