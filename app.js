@@ -1,5 +1,7 @@
+if(document.body.contains(document.getElementById("date"))){
 var dateTime = Date();
 document.getElementById("date").textContent = dateTime;
+}
 
 var e = document.getElementById("criteria");
 e.addEventListener("change", showDropdown);
