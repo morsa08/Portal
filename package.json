@@ -9,9 +9,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "nodemon": "^2.0.16"
+    "cors": "^2.8.5",
+    "jquery": "^3.6.0",
+    "json": "^11.0.0",
+    "nodemon": "^2.0.16",
+    "server": "^1.0.37"
   },
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/morsa08/Portal.git"

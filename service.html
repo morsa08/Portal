@@ -57,10 +57,11 @@
 
 
     <div class="col-sm-12 col-md-12 col-lg-12 col-xs-12">
-      <button class="createServiceButton" type="button" name="button" method="POST"><i class="fa-solid fa-plus"></i>Create New Service Ticket</button>
-    </div>
 
-    <form class="" action="service.html" method="post">
+      <a href="create.html">
+      <button id="createButton" class="createServiceButton"  name="button" ><i class="fa-solid fa-plus"></i>Create New Service Ticket</button>
+</a>
+    </div>
 
       <div class="row">
         <div id="serviceSearch" class=" col-sm-12 col-md-12 col-lg-12 col-xs-12">
@@ -108,13 +109,14 @@
           </button>
           <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <table class="table table-light table-hover">
+              <table id="openTable" class="table table-light table-hover">
                 <thead>
                   <th>Ticket No</th>
                   <th>Customer</th>
                   <th>Street</th>
                 </thead>
-                <tr>
+
+                <!-- <tr>
                   <td>123</td>
                   <td>Bobert</td>
                   <td>Sesame St.</td>
@@ -123,7 +125,7 @@
                   <td>452</td>
                   <td>Dogwater</td>
                   <td>Diahrrhea Ln.</td>
-                </tr>
+                </tr> -->
 
               </table>
             </div>
@@ -228,6 +230,7 @@
     </div>
   </div>
 
+<div id ="jsonDump">asf</div>
 
 </body>
 
