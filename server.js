@@ -4,10 +4,16 @@ const app = express();
 const port = "https://git.heroku.com/portal-service-tracker.git";
 const https = require('https');
 const database = require("./db.json");
-const cors = require("cors");
+const cors = require('cors');
 const fs = require("fs");
 
 app.use(express.json());
+
+app.use(function (req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
 
 app.use(function (req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
