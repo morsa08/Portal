@@ -1,5 +1,5 @@
 // jshint esversion:8
-const hmm = 1;
+
 // CHECK FOR DATE ELEMENT AND INSERT IF FOUND
 if (document.body.contains(document.getElementById("date"))) {
   var dateTime = Date();
