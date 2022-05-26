@@ -1,5 +1,7 @@
 // jshint esversion:8
-
+app.use(cors({
+  origin: '*'
+}));
 // CHECK FOR DATE ELEMENT AND INSERT IF FOUND
 if (document.body.contains(document.getElementById("date"))) {
   var dateTime = Date();
