@@ -1,5 +1,5 @@
 // jshint esversion:8
- 
+
 // CHECK FOR DATE ELEMENT AND INSERT IF FOUND
 if (document.body.contains(document.getElementById("date"))) {
   var dateTime = Date();
@@ -46,7 +46,7 @@ function showDropdown() {
 }
 
 // FETCH DATABASE FROM API AND STORE
-const url = "https://git.heroku.com/portal-service-tracker.git";
+const url = "https://morsa08.github.io/Portal/service.html";
 if (document.getElementById("openTable")) {
   fetch(url)
     .then(function(response) {
