@@ -37,7 +37,6 @@ app.get("/testing", function(request, response) {
 // POSTING JSON TO SERVER
 
 app.post("/testing", (request, response) => {
-
 // response.header("Access-Control-Allow-Origin", "*");
 // response.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
 let resData = (request.body);
@@ -61,8 +60,10 @@ jsonObject.customers.push(resData);
     }
      });
 
+     response.status(204).send();
+
 });
-response.status(204).send();
+
 
  app.listen(port, function() {
   console.log("Server is running on port " + port);
