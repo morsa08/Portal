@@ -46,7 +46,7 @@ function showDropdown() {
 }
 
 // FETCH DATABASE FROM API AND STORE
-const url = "https://morsa08.github.io/Portal/service.html";
+const url = "https://git.heroku.com/portal-service-tracker.git/testing";
 if (document.getElementById("openTable")) {
   fetch(url)
     .then(function(response) {
