@@ -46,7 +46,7 @@ function showDropdown() {
 }
 
 // FETCH DATABASE FROM API AND STORE
-const url = "https://portal-service-tracker.herokuapp.com/tracking";
+const url = "https://portal-service-tracker.herokuapp.com/testing";
 
 if (document.getElementById("openTable")) {
   fetch(url)
