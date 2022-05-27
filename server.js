@@ -61,8 +61,8 @@ jsonObject.customers.push(resData);
     }
      });
 
-     response.alert("Success!");
 });
+response.status(204).send();
 
  app.listen(port, function() {
   console.log("Server is running on port " + port);
