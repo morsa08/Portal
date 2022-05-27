@@ -133,5 +133,6 @@ async function postFormFieldsAsJson({
     let error = await res.text();
     throw new Error(error);
   }
+  console.log(res);
   return res.json();
 }
