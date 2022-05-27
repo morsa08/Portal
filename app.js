@@ -119,6 +119,7 @@ async function postFormFieldsAsJson({
   let fetchOptions = {
     method: "POST",
     headers: {
+      "Access-Control-Allow-Origin": ""*"",
       "Content-Type": "application/json",
       Accept: "application/json",
     },
