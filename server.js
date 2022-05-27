@@ -49,6 +49,8 @@ const jsonObject = JSON.parse(jsonString);
 // PUSH NEW CUSTOMER INTO ARRAY
 if (jsonObject.customers) {
 jsonObject.customers.push(resData);
+} else {
+  console.log("Json does not contain customers");
 }
 
 
