@@ -8,6 +8,8 @@ const database = require("./db.json");
 const cors = require('cors');
 const fs = require("fs");
 
+var cors = require(‘cors’);
+app.use(cors());
 app.use(express.json());
 
 // app.use(function (req, res, next) {
