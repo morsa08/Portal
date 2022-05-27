@@ -60,6 +60,8 @@ jsonObject.customers.push(resData);
       console.log(err);
     }
      });
+
+     response.alert("Success!");
 });
 
  app.listen(port, function() {
