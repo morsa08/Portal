@@ -112,7 +112,8 @@ async function postFormFieldsAsJson({
   url,
   formData
 }) {
-
+  console.log(url);
+  console.log(formData);
   let formDataObject = Object.fromEntries(formData.entries());
   let formDataJsonString = JSON.stringify(formDataObject);
 
