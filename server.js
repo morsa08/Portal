@@ -55,7 +55,8 @@ jsonObject.customers.push(resData);
      });
 });
 
-app.listen(3000, function() {
-  console.log("Server is running on port 3000.");
+const portListener = process.env.PORT;
+ app.listen(portListener, function() {
+  console.log("Server is running on port " + portListener);
   // console.log(database);
 });
