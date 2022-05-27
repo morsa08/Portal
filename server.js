@@ -20,6 +20,8 @@ app.use(express.urlencoded({
   extended: true
 }));
 
+console.log(poop);
+
 app.get("/testing", function(request, response) {
   response.header("Access-Control-Allow-Origin", "*");
   response.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
