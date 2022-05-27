@@ -9,17 +9,20 @@ const fs = require("fs");
 
 app.use(express.json());
 
-app.use(function (req, res, next) {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-  next();
-});
+// app.use(function (req, res, next) {
+//   res.header("Access-Control-Allow-Origin", "*");
+//   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+//   next();
+// });
+
 
 app.use(express.urlencoded({
   extended: true
 }));
 
 app.get("/testing", function(request, response) {
+  response.header("Access-Control-Allow-Origin", "*");
+  response.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
   response.json(database);
 });
 
@@ -47,7 +50,7 @@ jsonObject.customers.push(resData);
     if (err) {
       console.log(err);
     }
-    });
+     });
 });
 
 app.listen(3000, function() {
