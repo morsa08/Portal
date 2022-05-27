@@ -48,6 +48,8 @@ function showDropdown() {
 // FETCH DATABASE FROM API AND STORE
 const url = "https://portal-service-tracker.herokuapp.com/testing";
 
+console.log("woah");
+
 if (document.getElementById("openTable")) {
   fetch(url)
     .then(function(response) {
