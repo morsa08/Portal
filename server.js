@@ -8,7 +8,7 @@ const database = require("./db.json");
 const cors = require('cors');
 const fs = require("fs");
 
- 
+
 app.use(cors());
 app.use(express.json());
 
@@ -23,7 +23,7 @@ app.use(express.urlencoded({
   extended: true
 }));
 
-console.log("poop");
+console.log("newbie");
 
 app.get("/testing", function(request, response) {
   // response.header("Access-Control-Allow-Origin", "*");
