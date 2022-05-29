@@ -40,10 +40,14 @@ app.post("/testing", (request, response) => {
 // response.header("Access-Control-Allow-Origin", "*");
 // response.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
 let resData = (request.body);
-// console.log(resData);
 
 const jsonString = fs.readFileSync("db.json", "utf8");
 const jsonObject = JSON.parse(jsonString);
+
+console.log(resData);
+console.log(jsonString);
+console.log(jsonObject);
+
 
 // PUSH NEW CUSTOMER INTO ARRAY
 if (jsonObject.customers) {
