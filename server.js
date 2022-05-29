@@ -39,13 +39,13 @@ app.get("/testing", function(request, response) {
 app.post("/testing", (request, response) => {
 // response.header("Access-Control-Allow-Origin", "*");
 // response.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-let resData = (request.body);
 
+let resData = (request.body);
 const jsonString = fs.readFileSync("db.json", "utf8");
 const jsonObject = JSON.parse(jsonString);
 
 // console.log("RESDATA" + resData);
-// console.log("json string" +jsonString);
+console.log("Db.json reading:" +jsonString);
 // console.log("JSON OBJECT" + jsonObject);
 
 
@@ -64,7 +64,7 @@ jsonObject.customers.push(resData);
     }
      });
 
-     
+
 
      response.status(204).send();
 
