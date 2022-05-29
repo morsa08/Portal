@@ -58,6 +58,7 @@ if (document.getElementById("openTable")) {
     })
     .then(function(data) {
       appendData(data);
+      console.log(data);
     })
     .catch(function(err) {
       alert("Something's fucky!!");
