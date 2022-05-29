@@ -44,9 +44,9 @@ let resData = (request.body);
 const jsonString = fs.readFileSync("db.json", "utf8");
 const jsonObject = JSON.parse(jsonString);
 
-console.log(resData);
-console.log(jsonString);
-console.log(jsonObject);
+console.log("RESDATA" + resData);
+console.log("json string" +jsonString);
+console.log("JSON OBJECT" + jsonObject);
 
 
 // PUSH NEW CUSTOMER INTO ARRAY
