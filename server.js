@@ -1,7 +1,7 @@
 // jshint esversion: 8
 const express = require('express');
 const app = express();
-const port = process.env.PORT;
+const port = 3001;
 // const port = "https://portal-service-tracker.herokuapp.com/";
 const https = require('https');
 const database = require("./db.json");
