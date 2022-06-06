@@ -46,7 +46,7 @@ function showDropdown() {
 }
 
 // FETCH DATABASE FROM API AND STORE
-const apiUrl = "http://174.138.59.68:3001/testing";
+const apiUrl = "https://174.138.59.68:3001/testing";
 
 console.log("woah");
 
