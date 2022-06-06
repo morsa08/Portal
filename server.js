@@ -7,7 +7,13 @@ const https = require('https');
 const database = require("./db.json");
 const cors = require('cors');
 const fs = require("fs");
-
+const key = fs.readFileSync("server.key");
+const crt = fs.readFileSync("server.crt");
+const parameters = {
+  key: key,
+  cert: crt
+};
+const httpsServer = https.createServer(parameters, app);
 
 app.use(cors());
 app.use(express.json());
@@ -71,7 +77,7 @@ jsonObject.customers.push(resData);
 });
 
 
- app.listen(port, function() {
-  console.log("Server is running on port " + port);
+ httpsServer.listen(port, function() {
+  console.log("Https server is running on port " + port);
   // console.log(database);
 });
