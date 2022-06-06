@@ -13,6 +13,8 @@ const parameters = {
   key: key,
   cert: crt
 };
+
+console.log("key:"+ key);
 const httpsServer = https.createServer(parameters, app);
 
 app.use(cors());
