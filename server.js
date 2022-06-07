@@ -7,6 +7,7 @@ const https = require('https');
 const database = require("./db.json");
 const cors = require('cors');
 const fs = require("fs");
+
 // const httpsServer = https.createServer(parameters, app);
 
 app.use(cors());
@@ -71,7 +72,7 @@ jsonObject.customers.push(resData);
 });
 
 
-//  app.listen(port, function() {
-//   console.log("Http server is running on port " + port);
-//   // console.log(database);
-// });
+ app.listen(port, function() {
+  console.log("Http server is running on port " + port);
+  // console.log(database);
+});
