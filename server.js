@@ -7,12 +7,6 @@ const https = require('https');
 const database = require("./db.json");
 const cors = require('cors');
 const fs = require("fs");
-const parameters = {
-  key: key,
-  cert: crt
-};
-
-console.log("key:"+ key);
 // const httpsServer = https.createServer(parameters, app);
 
 app.use(cors());
