@@ -71,7 +71,7 @@ jsonObject.customers.push(resData);
 });
 
 
- app.listen(port, function() {
-  console.log("Http server is running on port " + port);
-  // console.log(database);
-});
+//  app.listen(port, function() {
+//   console.log("Http server is running on port " + port);
+//   // console.log(database);
+// });
