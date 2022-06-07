@@ -1,7 +1,7 @@
 // jshint esversion: 8
 const express = require('express');
 const app = express();
-const port = 3001;
+const port = 80;
 // const port = "https://portal-service-tracker.herokuapp.com/";
 const https = require('https');
 const database = require("./db.json");
@@ -15,7 +15,7 @@ const parameters = {
 };
 
 console.log("key:"+ key);
-const httpsServer = https.createServer(parameters, app);
+// const httpsServer = https.createServer(parameters, app);
 
 app.use(cors());
 app.use(express.json());
@@ -79,7 +79,7 @@ jsonObject.customers.push(resData);
 });
 
 
- httpsServer.listen(port, function() {
-  console.log("Https server is running on port " + port);
+ app.listen(port, function() {
+  console.log("Http server is running on port " + port);
   // console.log(database);
 });
