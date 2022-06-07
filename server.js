@@ -7,8 +7,6 @@ const https = require('https');
 const database = require("./db.json");
 const cors = require('cors');
 const fs = require("fs");
-const key = fs.readFileSync("server.key");
-const crt = fs.readFileSync("server.crt");
 const parameters = {
   key: key,
   cert: crt
