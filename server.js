@@ -26,7 +26,7 @@ app.use(express.urlencoded({
 
 console.log("dookiePoo");
 
-app.get("/testing", function(request, response) {
+app.get("/", function(request, response) {
   // response.header("Access-Control-Allow-Origin", "*");
   // response.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
   response.json(database);
@@ -37,7 +37,7 @@ app.get("/testing", function(request, response) {
 
 // POSTING JSON TO SERVER
 
-app.post("/testing", (request, response) => {
+app.post("/", (request, response) => {
 // response.header("Access-Control-Allow-Origin", "*");
 // response.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
 
