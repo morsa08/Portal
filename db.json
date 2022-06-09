@@ -1,5 +1,5 @@
 {
-  "customers": [{
+    "customers": [{
     "name": "James",
     "street": "Lee St.",
     "ticket_no": "1"
