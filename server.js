@@ -40,17 +40,17 @@ app.post("/", (request, response) => {
   // PUSH NEW CUSTOMER INTO ARRAY
   if (jsonObject.customers) {
     jsonObject.customers.push(resData);
+    // CONVERT jsonObject TO JSON AND WRITE TO DB.JSON
+    fs.writeFile("db.json", JSON.stringify(jsonObject, null, 2), (err) => {
+      if (err) {
+        console.log(err);
+      }
+    });
   } else {
     console.log("Json does not contain customers");
   }
 
 
-  // CONVERT jsonObject TO JSON AND WRITE TO DB.JSON
-  fs.writeFile("db.json", JSON.stringify(jsonObject, null, 2), (err) => {
-    if (err) {
-      console.log(err);
-    }
-  });
   response.status(204).send();
 });
 
