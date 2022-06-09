@@ -5,8 +5,7 @@ const port = 3001;
 // const port = "https://portal-service-tracker.herokuapp.com/";
 const https = require('https');
 const fs = require("fs");
-const db = fs.readFileSync("./db.json");
-const database = JSON.parse(db);
+
 const cors = require('cors');
 
 app.use(cors());
@@ -19,7 +18,8 @@ app.use(express.urlencoded({
 
 
 app.get("/", function(request, response) {
-
+  const db = fs.readFileSync("./db.json");
+  const database = JSON.parse(db);
   response.json(database);
 });
 
@@ -47,7 +47,7 @@ app.post("/", (request, response) => {
         console.log(err);
       }
     });
-  
+
   } else {
     console.log("Json does not contain customers");
   }
