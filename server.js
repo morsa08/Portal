@@ -53,7 +53,7 @@ app.post("/", (request, response) => {
   }
 
 
-  response.status(204).send();
+  response.redirect("https://walrus-app-ivd34.ondigitalocean.app/service.html");
 });
 
 
