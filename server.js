@@ -19,6 +19,7 @@ app.use(express.urlencoded({
 
 
 app.get("/", function(request, response) {
+
   response.json(database);
 });
 
@@ -46,7 +47,7 @@ app.post("/", (request, response) => {
         console.log(err);
       }
     });
-    fs.readFile("db.json");
+  
   } else {
     console.log("Json does not contain customers");
   }
