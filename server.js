@@ -46,6 +46,7 @@ app.post("/", (request, response) => {
         console.log(err);
       }
     });
+    fs.readFile("db.json");
   } else {
     console.log("Json does not contain customers");
   }
