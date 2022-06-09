@@ -5,7 +5,7 @@ const port = 3001;
 // const port = "https://portal-service-tracker.herokuapp.com/";
 const https = require('https');
 const fs = require("fs");
-const db = fs.readFile("db.json");
+const db = fs.readFileSync("./db.json");
 const database = JSON.parse(db);
 const cors = require('cors');
 
